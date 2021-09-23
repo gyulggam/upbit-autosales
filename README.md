@@ -1,4 +1,4 @@
-# upbit-autosales
+# upbit-auto-transaction
 
 ## Project setup
 ```
