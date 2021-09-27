@@ -1,22 +1,27 @@
 <template>
     <div>
-        {{ sTest }}
+        <router-view />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { mapActions } from 'vuex'
 
 export default defineComponent({
     name: "App",
     data() {
         return {
-            sTest: "test"
         }
+    },
+    methods: {
+        ...mapActions([
+            'getCoinList'
+        ]),
+    },
+    created() {
+        this.getCoinList();
+        this.$router.push('home');
     },
 })
 </script>
-
-<style lang="scss">
-
-</style>
