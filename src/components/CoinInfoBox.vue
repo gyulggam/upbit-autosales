@@ -15,7 +15,7 @@
         </div>
 
         <div class="coin-rate">
-            45%
+            45%sdf
         </div>
     </div>
 </template>
